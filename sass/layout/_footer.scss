@@ -1,0 +1,32 @@
+.footer{
+    display: flex;
+    width: 430px;
+    height: 120px;
+    font-size: 24px;
+    font-weight: 800;
+    background-color: $btn-color-dark-blue;
+    color: $container-bg-white;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    @include breakpoint(tablet){
+        width: 768px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include breakpoint(desktop){
+        width: 1200px;
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+    
+    #footer-btn{
+        background : linear-gradient(to bottom, $color-blue, $color-lile);
+        font-weight: 400;
+        &:hover{
+            background: $btn-hover-pink;
+            opacity: 85%;
+        }
+    }
+}

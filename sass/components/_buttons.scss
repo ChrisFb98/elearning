@@ -1,0 +1,14 @@
+.button-primary{
+    width: 167px;
+    height: 56px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    
+    &:hover{
+        opacity: 80%;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,38 @@
+@import "settings";
+@import "./abstracts/abstracts";
+@import "./vendors/vendors";
+@import "./base/base";
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";
+@import "./themes/themes";
+// @use 'variables' as vars;
+
+
+html{
+  background-color: $container-bg-white;
+  font-family: $jakarta-font;
+}
+
+.container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background : linear-gradient(to bottom, #FFFFFF, $container-secondary-white);
+  padding-top: 20px;
+  overflow: hidden;
+  @include breakpoint(tablet){
+    // width: 768px;
+    width: 100vw;
+  }
+  @include breakpoint(desktop){
+    width: 100vw;
+  }
+}
+
+
+
+
+

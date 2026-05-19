@@ -1,0 +1,56 @@
+.article {
+    width: 343px;
+    height: 283px;
+    background-color: $container-bg-white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+    #article-title {
+        font-weight: 800;
+        font-size: 20px;
+        color: $btn-color-dark-blue;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #article-description {
+        font-weight: 500;
+        font-size: 16px;
+        color: $paragraph-gray-color;
+        padding-bottom: 20px;
+    }
+
+    img {
+        margin-top: -40px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+
+    a {
+        font-weight: 700;
+        font-size: 18px;
+        color: $link-get-started-color;
+        text-decoration: none;
+    }
+}
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(tablet){
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        width: 768px;
+        margin-bottom: 50px;
+        justify-content: space-around;
+    }
+    @include breakpoint(desktop){
+        width: 1200px;
+    }
+}
